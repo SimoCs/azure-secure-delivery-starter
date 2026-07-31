@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Verify the HTTPS-only baseline in the deploy config
         run: |
@@ -35,7 +35,7 @@ jobs:
     environment: production
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Deploy the site to Azure App Service
         uses: azure/webapps-deploy@v3
